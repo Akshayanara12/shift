@@ -1,0 +1,9 @@
+$dna="GGGGCCCGC";
+print"$dna\n";
+$position1=1;
+$position2=7;
+$base1=substr($dna,$position1,2);
+$base2=substr($dna,$position2,2);
+substr($dna,$position1,2) = $base2;
+substr($dna,$position2,2) =$base1;
+print"$dna";
